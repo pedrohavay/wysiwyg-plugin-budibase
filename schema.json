@@ -1,0 +1,62 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "wysiwyg-editor",
+    "friendlyName": "WYSIWYG Editor",
+    "description": "WYSIWYG Editor",
+    "icon": "Brackets",
+    "settings": [
+      {
+        "type": "select",
+        "key": "fieldType",
+        "label": "Field Type",
+        "options": [
+          {
+            "label": "String",
+            "value": "text"
+          },
+          {
+            "label": "JSON",
+            "value": "json"
+          }
+        ],
+        "defaultValue": "text",
+        "required": true
+      },
+      {
+        "type": "field/string",
+        "key": "fieldText",
+        "label": "Field (String)",
+        "dependsOn": {
+          "setting": "fieldType",
+          "value": "text"
+        }
+      },
+      {
+        "type": "field/json",
+        "key": "fieldJSON",
+        "label": "Field (JSON)",
+        "dependsOn": {
+          "setting": "fieldType",
+          "value": "json"
+        }
+      },
+      {
+        "type": "text",
+        "label": "Label",
+        "key": "label"
+      },
+      {
+        "type": "boolean",
+        "label": "Read Only",
+        "key": "readOnly"
+      },
+      {
+        "type": "validation/string",
+        "label": "Validation (String)",
+        "key": "validationText"
+      }
+    ]
+  }
+}
