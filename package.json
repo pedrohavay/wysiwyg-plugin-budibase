@@ -1,6 +1,6 @@
 {
   "name": "wysiwyg-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WYSIWYG Editor (based on https://github.com/josdejong/svelte-jsoneditor)",
   "license": "MIT",
   "svelte": "index.js",
